@@ -1,0 +1,21 @@
+
+# DrRacket autosave files
+*.rkt~
+*.rkt.bak
+\#*.rkt#
+\#*.rkt#*#
+
+# generated files
+*.o
+*.s
+*.out
+*.out.dSYM
+*~
+
+# Compiled racket bytecode
+compiled/
+*.zo
+
+# Dependency tracking files
+*.dep
+old_tests/
