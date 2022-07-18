@@ -1,37 +1,20 @@
-## A1: Compiler for *L<sub>var</sub>* Language
+## Nano Pass Compiler
 
-## Homework questions
-1. Solve **Exercises 2 to 9** of the text book.
-2. Teams with **4 students** must additionally solve **Exercise 10 and 11** too.
+This is a nano pass compiler implementation which spans a subset of the racket language.
+Current features of the language that has been covered:
+- Integer and boolean data type
+- Arithmetic operations including + and -
+- Register allocation using graph coloring
+- Smart partial evaluation
+- Support for booleans and conditional if statement
+- Support for while loops, and begin construct
+- Support for mutable variables
+- Support for fixed size heap allocated vectors
+- Support for garbage collection via a 2 space copy collector
+- Support for functions, recursion and efficient tail recursion
 
-## Deadline
-13th February, 23:59
 
-## Homework instructions
-
-For your homework exercises, you will be expected to implement various
-compiler passes. It will ultimately be up to you how exactly to do
-this, but for the first assignment you are given code templates in
-`compiler.rkt` to fill out.
-
-As you fill out the functions in `compiler.rkt`, tests are run with the
-`run-tests.rkt` module. You can run these tests either from the command
-line with:
-
-```
-   racket run-tests.rkt
-```
-
-Or by opening and running `run-tests.rkt` in DrRacket.
-
-Before running the compiler tests, you need to compile
-`runtime.c` (see below).
-
-## Public student code
-
-Utility code, test suites, etc. for the compiler course.
-
-This code will be described in the Appendix of the book.
+### Structure and Running
 
 The `runtime.c` file needs to be compiled and linked with the assembly
 code that your compiler produces. To compile `runtime.c`, do the
