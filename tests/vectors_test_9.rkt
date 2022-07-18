@@ -1,0 +1,7 @@
+(let ([v (vector (vector 18 10) 2 (vector 1 20))])
+	(+ (vector-ref (vector-ref v 0) 0)
+		(- (vector-ref (vector-ref v 0) 1)
+			(+ (vector-ref v 1)
+				(- (vector-ref (vector-ref v 2) 0)
+					(+ (vector-ref (vector-ref v 2) 1)
+						(vector-length v)))))))

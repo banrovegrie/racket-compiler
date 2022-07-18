@@ -1,0 +1,11 @@
+(let ([v (vector 42)])
+	(let ([w (vector v)])
+		(let ([x (vector w)])
+			(let ([y (vector x)])
+				(let ([z (vector y)])
+					(vector-ref (vector-ref (vector-ref (vector-ref (vector-ref z
+										0)
+									0)
+								0)
+							0)
+						0))))))

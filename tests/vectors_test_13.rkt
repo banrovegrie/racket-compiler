@@ -1,0 +1,11 @@
+(let ([v (vector #f #t)])
+	(let ([w (vector 1 2 3)])
+		(begin
+			(vector-set! w 0 (read))
+			(vector-set! w 1 (read))
+			(vector-set! w 2 (read))
+			(if (vector-ref v 1)
+				(+ (vector-ref w 0)
+					(+ (vector-ref w 1)
+						(vector-ref w 2)))
+				0))))
